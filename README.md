@@ -12,9 +12,9 @@ Clone with degit:
 $ npx degit https://github.com/Gninoskcaj/Gmailer my-app
 ```
 
-Create a file named  `pass.txt`. This is where the password for your gmail account lives. If you are using 2FA you will need to create an [App Password](https://myaccount.google.com/apppasswords). Use your app password instead of the password you usually use.
+Create a file named `pass.txt`. This is where the password for your gmail account lives. If you are using 2FA you will need to create an [App Password](https://myaccount.google.com/apppasswords). Use your app password instead of the password you usually use.
 
-Next Create a file named `email-list.json` , which is a json file containing an `array`  of all your email Newsletter subscribers.
+Next Create a file named `email-list.json` , which is a json file containing an `array` of all your email Newsletter subscribers.
 
 {% code-tabs %}
 {% code-tabs-item title="email-list.json" %}
@@ -34,9 +34,9 @@ Now, create a file named`config.json`.
 {% code-tabs-item title="config.json" %}
 ```javascript
 {
-	"from": "You <you@email.com>",
-	"subject": "Gmailer",
-	"gmailUserName": "YourGmailUserName"
+    "from": "You <you@email.com>",
+    "subject": "Gmailer",
+    "gmailUserName": "YourGmailUserName"
 }
 ```
 {% endcode-tabs-item %}
@@ -51,6 +51,4 @@ Once you're done, `npm run send:email`
 ```bash
 npm run send:email
 ```
-
-
 

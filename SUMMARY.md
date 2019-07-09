@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Gmailer](README.md)
-* [API](API.md)
+* [API](api.md)
 
