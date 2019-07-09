@@ -1,5 +1,5 @@
 ---
-description: This is an information center for my projects
+description: This is an information center for my open source projects
 ---
 
 # Welcome To The Docs
@@ -14,9 +14,11 @@ As a developer new to open source, I **strongly dislike** bad documentation. Bad
 
 Yes!
 
-* [My Portfolio - jacksonmooring.com](http://www.jacksonmooring.com)
-* [Tutorials - tutorials.jacksonmooring.com](https://tutorials.jacksonmooring.com)
-* [School Blog - education.jacksonmooring.com](http://education.jacksonmooring.com)
+[My Portfolio - jacksonmooring.com](http://www.jacksonmooring.com)
+
+[Tutorials - tutorials.jacksonmooring.com](https://tutorials.jacksonmooring.com)
+
+[School Blog - education.jacksonmooring.com](http://education.jacksonmooring.com)
 
 
 
