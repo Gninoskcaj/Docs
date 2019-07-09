@@ -130,7 +130,7 @@ The users username
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="Update Information" type="object" required=true %}
-This is the information to update the database  with
+This is the information to update the database with
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -157,9 +157,9 @@ Returns The Updated information
 {% endapi-method %}
 
 {% hint style="danger" %}
-Send The Complete  object
+Send The Complete object
 
-If you need to change ProUser from true to false. 
+If you need to change ProUser from true to false.
 
 **The Body of the request should look like this:**
 
