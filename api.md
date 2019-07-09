@@ -2,7 +2,7 @@
 description: A User Centered CRUD API
 ---
 
-# API
+# User-Centered API
 
 ## Get Started
 
