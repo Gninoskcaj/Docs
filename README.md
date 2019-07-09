@@ -9,7 +9,7 @@ description: Send a Newsletter from your terminal
 Clone with degit:
 
 ```bash
-$ npm degit https://github.com/Gninoskcaj/Gmailer my-app
+$ npx degit https://github.com/Gninoskcaj/Gmailer my-app
 ```
 
 Create a file named  `pass.txt`. This is where the password for your gmail account lives. If you are using 2FA you will need to create an [App Password](https://myaccount.google.com/apppasswords). Use your app password instead of the password you usually use.
