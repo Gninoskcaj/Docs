@@ -18,9 +18,9 @@ _**Note: I use postman to send api requests**_
 
 ## API
 
-Note: when using the api, send json in the body of the request.
+Note: when using the api, send `json` in the body of the request.
 
-This is an example user json file.
+This is an example user `json` file.
 
 ```javascript
 {
@@ -111,7 +111,7 @@ Returns the the information contents of the file requested
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="localhost:3000" path="/users/:username" %}
+{% api-method method="put" host="localhost:8000" path="/users/:username" %}
 {% api-method-summary %}
 Update User
 {% endapi-method-summary %}
@@ -183,7 +183,7 @@ If you need to change ProUser from true to false.
 ```
 {% endhint %}
 
-{% api-method method="delete" host="localhost:300" path="/users/:username" %}
+{% api-method method="delete" host="localhost:8000" path="/users/:username" %}
 {% api-method-summary %}
 Delete a User
 {% endapi-method-summary %}
@@ -196,7 +196,7 @@ Delete a User
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="username" type="string" required=true %}
-The username of the user
+The username of a user
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
