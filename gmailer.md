@@ -71,6 +71,6 @@ file('../myfile.js');
 ```
 
 {% hint style="success" %}
-Questions? Feel free to contact me by email, `jackson.mooring@gmail.com` or discord,`Gninoskcaj#7292`
+Questions? Feel free to contact me by **email**, **`jackson.mooring@gmail.com`** or ping me **Discord**,**`Gninoskcaj#7292`**
 {% endhint %}
 
