@@ -1,54 +1,76 @@
 ---
-description: Send a Newsletter from your terminal
+description: Interact with the Gmail API
 ---
 
 # Gmailer
 
-## Usage
+## Installation
 
-Clone with degit:
+Install the package into your project:
+
+### npm
 
 ```bash
-$ npx degit https://github.com/Gninoskcaj/Gmailer my-app
+$ npm i gmail-api
 ```
 
-Create a file named `pass.txt`. This is where the password for your gmail account lives. If you are using 2FA you will need to create an [App Password](https://myaccount.google.com/apppasswords). Use your app password instead of the password you usually use.
+### yarn
 
-Next Create a file named `email-list.json` , which is a json file containing an `array` of all your email Newsletter subscribers.
+```text
+$ yarn add gmail-api
+```
 
-{% code-tabs %}
-{% code-tabs-item title="email-list.json" %}
+## API
+
+### `sendMail(options)`
+
+`options: <Object>`
+
+All options are required
+
+| Option | Type | Description |
+| :--- | :--- | :--- |
+| `from` | `String` | Senders email address |
+| `to` | `String`, `List` or `Array` | Who to send the email to. |
+| `subject` | `String` | Subject of the email |
+| `body` | `String` | Body of the email. Accepts `html` |
+
+Example:
+
 ```javascript
- [
-    "myfriend@yahoo.com",
-    "john@example.com",
-    "yourfriend@gmail.com"
-]
+const { sendMail } = require('gmail-api');
+
+sendMail({
+    from: '"John Doe" <john@doe.com>',
+    
+    // <Array> Sends an individual email to each person.
+    
+    // <List> Sends one email to all recipients
+    // (e. g. 'my@email.com, your@email.com')
+    
+    // <String> Send one email to the recipient
+    // (e. g. 'my@email.com')
+    to: [ "myfriend@yahoo.com", "yourfriend@hotmail.com" ], 
+    subject: 'Node.js Email',
+    
+    // `file(url)` Sends the contents of the file url
+    body: file('../email.html')
+})
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-Now, create a file named`config.json`.
+### `file(url)`
 
-{% code-tabs %}
-{% code-tabs-item title="config.json" %}
+ `url: <String> or <Url>`
+
+Sends the contents of the url.
+
 ```javascript
-{
-    "from": "You <you@email.com>",
-    "subject": "Gmailer",
-    "gmailUserName": "YourGmailUserName"
-}
+// Accepts absolute and relative paths
+file('https://example.com/myfile.html');
+file('../myfile.js');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-{% hint style="info" %}
-If You have any errors send me an email to **me@jacksonmooring.com** or ping me on discord at **Gninoskcaj\#7292**
+{% hint style="success" %}
+Questions? Feel free to contact me by email, `jackson.mooring@gmail.com` or discord,`Gninoskcaj#7292`
 {% endhint %}
-
-Once you're done, `npm run send:email`
-
-```bash
-npm run send:email
-```
 
