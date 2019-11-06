@@ -4,22 +4,7 @@ description: Play hangman from your terminal
 
 # Hangman CLI
 
-```
- _    _                                            _____ _ _ 
-| |  | |                                          / ____| (_)
-| |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __   | |    | |_ 
-|  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \  | |    | | |
-| |  | | (_| | | | | (_| | | | | | | (_| | | | | | |____| | |
-|_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|  \_____|_|_|
-                     __/ |                                   
-                    |___/                                    
-```
-
-> Play hangman from your terminal
-
-
-
-# Installation
+## Installation
 
 ```bash
 $ git clone https://github.com/Gninoskcaj/hangman-cli
@@ -32,7 +17,7 @@ $ source .profile
 
 Thats it for installation, to start playing type `hangman`
 
-# Usage
+## Usage
 
 To play type `hangman`. See if you can win!
 
