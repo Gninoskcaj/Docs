@@ -6,10 +6,10 @@ description: A User Centered CRUD API
 
 ## Get Started
 
-1. ```bash
+1. ```
    $ npm i simple-user-api
    ```
-2. ```bash
+2. ```
    $ npm run dev
    ```
 3. Navigate to `localhost:8000`
@@ -22,7 +22,7 @@ Note: when using the api, send `json` in the body of the request.
 
 This is an example user `json` file.
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",
@@ -57,7 +57,7 @@ This what will be in the file
 Returns the created information
 {% endapi-method-response-example-description %}
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",
@@ -96,7 +96,7 @@ The users username
 Returns the the information contents of the file requested
 {% endapi-method-response-example-description %}
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",
@@ -141,7 +141,7 @@ This is the information to update the database with
 Returns The Updated information
 {% endapi-method-response-example-description %}
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",
@@ -163,7 +163,7 @@ If you need to change ProUser from true to false.
 
 **The Body of the request should look like this:**
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",
@@ -176,7 +176,7 @@ If you need to change ProUser from true to false.
 
 **Not This:**
 
-```javascript
+```
 {
     "ProUser": false
 }
@@ -207,7 +207,7 @@ The username of a user
 Returns the information of the deleted user
 {% endapi-method-response-example-description %}
 
-```javascript
+```
 {
     "username": "Gninoskcaj",
     "password": "LetMeIn888",

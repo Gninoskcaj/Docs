@@ -6,11 +6,11 @@ description: A Programable Virtual Assistant
 
 ## Usage
 
-```bash
+```
 $ npm i talk-back-bot
 ```
 
-```bash
+```
 $ npm i compilerBot
 ```
 
@@ -20,9 +20,7 @@ This App can be used  in browser as well as the server
 
 Once installed create a file named `commands.json`
 
-{% code-tabs %}
-{% code-tabs-item title="commands.json" %}
-```javascript
+```
 [
     {
         "q":"What is your name?",
@@ -30,16 +28,12 @@ Once installed create a file named `commands.json`
     }
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 `commands.json` is an `array` of `objects` each `object` being a question/answer pare.
 
 Lets say you wanted to make a chat bot like Siri. You might start with the name.
 
-{% code-tabs %}
-{% code-tabs-item title="commands.json" %}
-```javascript
+```
 [
     {
         "q": "What is your name?",
@@ -47,14 +41,10 @@ Lets say you wanted to make a chat bot like Siri. You might start with the name.
     }
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 You could do it like that. But it would be better to access the information object like this.
 
-{% code-tabs %}
-{% code-tabs-item title="commands.json" %}
-```javascript
+```
 [
     {
         "q": "What is your name?",
@@ -62,8 +52,6 @@ You could do it like that. But it would be better to access the information obje
     }
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 ## Methods
 

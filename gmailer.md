@@ -10,13 +10,13 @@ Install the package into your project:
 
 ### npm
 
-```bash
+```
 $ npm i gmail-api
 ```
 
 ### yarn
 
-```text
+```
 $ yarn add gmail-api
 ```
 
@@ -39,28 +39,26 @@ All options are required
 
 Example:
 
-```javascript
-const { sendMail, file } = require('gmail-api');
+    const { sendMail, file } = require('gmail-api');
 
-sendMail({
-    username: 'jackson.mooring@gmail.com',
-    password: 'MyTopSecret:-)'
-    from: '"John Doe" <john@doe.com>',
-    
-    // <Array> Sends an individual email to each person.
-    
-    // <List> Sends one email to all recipients
-    // (e. g. 'my@email.com, your@email.com')
-    
-    // <String> Send one email to the recipient
-    // (e. g. 'my@email.com')
-    to: [ "myfriend@yahoo.com", "yourfriend@hotmail.com" ], 
-    subject: 'Node.js Email',
-    
-    // `file(url)` Sends the contents of the file url
-    body: file('../email.html')
-})
-```
+    sendMail({
+        username: 'jackson.mooring@gmail.com',
+        password: 'MyTopSecret:-)'
+        from: '"John Doe" <john@doe.com>',
+
+        // <Array> Sends an individual email to each person.
+
+        // <List> Sends one email to all recipients
+        // (e. g. 'my@email.com, your@email.com')
+
+        // <String> Send one email to the recipient
+        // (e. g. 'my@email.com')
+        to: [ "myfriend@yahoo.com", "yourfriend@hotmail.com" ], 
+        subject: 'Node.js Email',
+
+        // `file(url)` Sends the contents of the file url
+        body: file('../email.html')
+    })
 
 ### `file(url)`
 
@@ -68,7 +66,7 @@ sendMail({
 
 Sends the contents of the url.
 
-```javascript
+```
 const { file } = require('gmail-api')
 
 // Accepts absolute and relative paths
