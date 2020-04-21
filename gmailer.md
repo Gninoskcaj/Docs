@@ -59,6 +59,7 @@ sendMail({
     
     // `file(url)` Sends the contents of the file url    
     body: file('../email.html')})
+})
 ```
 
 ### `file(url)`
